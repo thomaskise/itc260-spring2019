@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+include 'credentials.php'; 
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -70,15 +70,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+//include 'credentials.php';
+
 $active_group = 'default';
 $query_builder = TRUE;
 
+//$host = SP19_DB_HOST;
+//$user = SP19_DB_USER;
+//$password = SP19_DB_PASSWORD;
+//$database = SP19_DB_NAME;
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'school.kiseharrington.com',
-	'username' => 'itc250dev',
-	'password' => 'School1dude!!',
-	'database' => 'kise_itc260_db',
+    'hostname' => SP19_DB_HOST,
+    'username' => SP19_DB_USER,
+    'password' => SP19_DB_PASSWORD,
+    'database' => SP19_DB_NAME,
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
