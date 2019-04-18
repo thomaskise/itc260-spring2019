@@ -2,7 +2,7 @@
 *credentials*
 application/cache/*
 !application/cache/index.html
-
+*old*
 application/logs/*
 !application/logs/index.html
 
